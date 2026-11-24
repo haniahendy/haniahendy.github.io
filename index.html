@@ -1101,6 +1101,11 @@ dialog.pf-modal[open] { animation: modalIn .28s ease-out both; }
 .pf-modal figure { margin: 0 0 20px; }
 .pf-modal figcaption { margin-top: 4px; color: var(--ds-ink-2); font-size: var(--file-small); }
 .pf-modal .file-facts { margin-bottom: 20px; }
+.pf-modal .file-row { display: grid; grid-template-columns: 110px 1fr; gap: 4px 16px; padding: 10px 0; align-items: baseline; }
+.pf-modal .file-row-main, .pf-modal .file-row-body { display: contents; }
+.pf-modal .file-row-slot { width: auto; height: auto; background: none; border-radius: 0; overflow: visible; font-family: var(--file-font-text); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .05em; color: var(--ds-ink-2); white-space: normal; }
+.pf-modal .file-row-detail { font-family: var(--file-font-text); font-size: 15px; line-height: 1.5; color: var(--ds-ink); }
+
 .pf-close { position: absolute; top: 14px; inset-inline-end: 14px; appearance: none; width: 34px; height: 34px; border-radius: 999px; border: 1px solid var(--ds-hairline); background: var(--ds-white); color: var(--ds-ink); font-size: 16px; line-height: 1; cursor: pointer; }
 .pf-close:hover { background: var(--ds-muted); }
 .pf-close:focus-visible { outline: 2px solid var(--ds-teal); outline-offset: 2px; }
